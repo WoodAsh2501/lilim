@@ -22,7 +22,8 @@ vim.g.maplocalleader = "\\"
 
 require("lazy").setup({
     spec = {
-        { import = "plugins" }
+        { import = "plugins" },
+		{ import = "plugins.languages" },
     },
     install = {
         colorscheme = { "pastelnight" }
