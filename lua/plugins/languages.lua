@@ -1,10 +1,24 @@
 return {
+	-- LSP manager
+	{ "mason-org/mason.nvim", opts = {} },
+	{
+		"mason-org/mason-lspconfig.nvim",
+		dependencies = {
+			"mason-org/mason.nvim",
+			"neovim/nvim-lspconfig",
+		},
+		opts = {
+			ensure_installed = { "pylsp", "lua_ls", "rust_analyzer" },
+		},
+	},
 	{
 		-- LSP
 		"neovim/nvim-lspconfig",
 		lazy = false,
 		config = function()
 			-- LSP settings
+			local lspconfig = require("lspconfig")
+			lspconfig.pylsp.setup({})
 		end,
 
 		-- Completion
@@ -30,7 +44,7 @@ return {
 				formatters_by_ft = {
 					lua = { "stylua" },
 					python = { "isort", "black" },
-					rust = { "rustfmt", lsp_format = "fallback" },
+					rust = { "rustfmt" },
 					javascript = { "prettierd", "prettier", stop_after_first = true },
 				},
 				format_on_save = {
