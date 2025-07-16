@@ -1,7 +1,7 @@
-require('pastelnight').setup({
+require("pastelnight").setup({
 	styles = {
-		comments = { italic = true }
-	}
+		comments = { italic = true },
+	},
 })
 
-vim.cmd('colorscheme pastelnight')
+vim.cmd("colorscheme pastelnight")
