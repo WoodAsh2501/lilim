@@ -25,8 +25,5 @@ require("lazy").setup({
 		{ import = "plugins" },
 		{ import = "plugins.languages" },
 	},
-	install = {
-		colorscheme = { "pastelnight" },
-	},
 	checker = { enabled = true },
 })
