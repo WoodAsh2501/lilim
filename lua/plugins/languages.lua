@@ -29,7 +29,7 @@ return {
 		},
 		init = function()
 			vim.g.coq_settings = {
-				auto_start = true,
+				auto_start = "shut-up",
 				keymap = {
 					manual_complete = "<C+Tab>",
 				},
