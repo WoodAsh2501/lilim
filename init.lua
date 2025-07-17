@@ -1,3 +1,4 @@
-require('config.options')
-require('config.lazy')
-require('themes')
+require("config.options")
+require("config.keybindings")
+require("config.lazy")
+require("themes")
