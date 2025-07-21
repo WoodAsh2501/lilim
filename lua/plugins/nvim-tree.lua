@@ -23,9 +23,5 @@ return {
 				group_empty = true,
 			},
 		})
-
-		--	vim.defer_fn(function()
-		--		vim.cmd("NvimTreeOpen")
-		--	end, 0)
 	end,
 }

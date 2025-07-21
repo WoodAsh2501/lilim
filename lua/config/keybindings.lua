@@ -13,4 +13,6 @@ set("n", "<A-j>", "<C-w>j", opt)
 set("n", "<A-k>", "<C-w>k", opt)
 set("n", "<A-l>", "<C-w>l", opt)
 
-
+set("n", "<A-q>", "<cmd>qa<CR>", opt)
+set("n", "<A-t>", "<cmd>NvimTreeToggle<CR>", opt)
+set("n", "<Space>", ":", opt)
