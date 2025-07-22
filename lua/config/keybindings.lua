@@ -8,10 +8,15 @@ local set = vim.api.nvim_set_keymap
 set("v", "<", "<gv", opt)
 set("v", ">", ">gv", opt)
 
-set("n", "<A-h>", "<C-w>h", opt)
-set("n", "<A-j>", "<C-w>j", opt)
-set("n", "<A-k>", "<C-w>k", opt)
-set("n", "<A-l>", "<C-w>l", opt)
+set("n", "<S-A-h>", "<C-w>h", opt)
+set("n", "<S-A-j>", "<C-w>j", opt)
+set("n", "<S-A-k>", "<C-w>k", opt)
+set("n", "<S-A-l>", "<C-w>l", opt)
+
+set("i", "<A-h>", "<Left>", opt)
+set("i", "<A-j>", "<Down>", opt)
+set("i", "<A-k>", "<Up>", opt)
+set("i", "<A-l>", "<Right>", opt)
 
 set("n", "<A-q>", "<cmd>qa<CR>", opt)
 set("n", "<A-t>", "<cmd>NvimTreeToggle<CR>", opt)
